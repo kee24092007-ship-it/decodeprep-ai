@@ -1,50 +1,90 @@
 import bcrypt
-from database import add_user, get_user
+from database import create_connection
 
 
-def hash_password(password):
+# -----------------------------
+# REGISTER USER
+# -----------------------------
+def register_user(name, email, password):
 
-    return bcrypt.hashpw(
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    cursor.execute(
+        "SELECT * FROM users WHERE email=?",
+        (email,)
+    )
+
+    if cursor.fetchone():
+
+        conn.close()
+
+        return False, "Email already exists."
+
+    hashed_password = bcrypt.hashpw(
         password.encode(),
         bcrypt.gensalt()
     )
 
-
-def verify_password(password, hashed_password):
-
-    return bcrypt.checkpw(
-        password.encode(),
-        hashed_password
+    cursor.execute(
+        """
+        INSERT INTO users(name,email,password)
+        VALUES(?,?,?)
+        """,
+        (
+            name,
+            email,
+            hashed_password
+        )
     )
 
+    conn.commit()
+    conn.close()
 
-def register_user(fullname, email, password):
-
-    if get_user(email):
-        return False
-
-    hashed = hash_password(password)
-
-    add_user(
-        fullname,
-        email,
-        hashed
-    )
-
-    return True
+    return True, "Account created successfully."
 
 
+# -----------------------------
+# LOGIN USER
+# -----------------------------
 def login_user(email, password):
 
-    user = get_user(email)
+    conn = create_connection()
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+        SELECT * FROM users
+        WHERE email=?
+        """,
+        (email,)
+    )
+
+    user = cursor.fetchone()
+
+    conn.close()
 
     if user is None:
-        return None
+        return False, "User not found."
 
-    if verify_password(
-        password,
-        user[3]
+    stored_password = user[3]
+
+    if bcrypt.checkpw(
+        password.encode(),
+        stored_password
     ):
-        return user
+        return True, user
 
-    return None
+    return False, "Incorrect password."
+
+
+# -----------------------------
+# LOGOUT
+# -----------------------------
+def logout():
+
+    import streamlit as st
+
+    st.session_state.logged_in = False
+
+    st.session_state.user = None
