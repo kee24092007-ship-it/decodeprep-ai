@@ -1,0 +1,109 @@
+ COMPANY BASICS
+
+Q: What is Decode Labs?
+A: Decode Labs is a global EdTech platform offering internship-based learning programs in AI, Full Stack Development, Data Science, and Cloud Computing with real-world projects.
+
+Q: What does Decode Labs do?
+A: It provides mentor-led internships where students gain practical experience through real industry projects.
+
+Q: Where is Decode Labs located?
+A: Decode Labs operates as a remote-first global platform.
+
+Q: Is Decode Labs online or offline?
+A: All programs are conducted online.
+
+Q: Who can join Decode Labs?
+A: Students, freshers, and professionals looking to upgrade their technical skills.
+
+ INTERNSHIP DETAILS
+
+Q: How long is the internship?
+A: Most internships are 4 weeks long with structured learning modules.
+
+Q: Is the internship paid?
+A: Some programs may be free, while others are paid depending on the track.
+
+Q: Will I get real projects?
+A: Yes, each internship includes hands-on real-world projects.
+
+Q: Is mentorship provided?
+A: Yes, learners receive mentor guidance throughout the program.
+
+Q: Is the internship remote?
+A: Yes, it is fully remote.
+
+Q: What is the goal of the internship?
+A: To make students industry-ready through practical exposure.
+
+ COURSES / DOMAINS
+
+Q: What courses are offered?
+A: AI, Machine Learning, Data Science, Full Stack Development, Python, Java, Cloud Computing, Cybersecurity.
+
+Q: Do you teach Artificial Intelligence?
+A: Yes, AI and ML-based internship programs are available.
+
+Q: Is Full Stack Development included?
+A: Yes, MERN and MEAN stack training is available.
+
+Q: Do you teach Python?
+A: Yes, Python programming is included in multiple tracks.
+
+ CERTIFICATION
+
+Q: Will I get a certificate?
+A: Yes, a completion certificate is provided after successful evaluation.
+
+Q: Is the certificate useful?
+A: Yes, it can be added to LinkedIn, resume, and portfolios.
+
+Q: Is the certificate verified?
+A: Yes, certificates are digitally verifiable.
+
+Q: When will I receive certificate?
+A: After successful completion of the internship.
+
+ PLACEMENT & CAREER
+
+Q: Do you provide placement support?
+A: Yes, Decode Labs provides career guidance and interview preparation support.
+
+Q: Do you help with resume building?
+A: Yes, resume and portfolio assistance is provided.
+
+Q: Do you conduct mock interviews?
+A: Yes, mock interviews are part of the training process.
+
+Q: Do you have hiring partners?
+A: Yes, there are industry connections for opportunities.
+
+ FEES & PAYMENT
+
+Q: What is the fee structure?
+A: Fees vary depending on the program and track selected.
+
+Q: Is EMI available?
+A: Some programs may support flexible payment options.
+
+Q: Are scholarships available?
+A: Yes, selected learners may get scholarship opportunities.
+
+ CONTACT
+
+Q: How can I contact Decode Labs?
+A: You can reach through the official website contact section.
+
+Q: Is support available?
+A: Yes, support is available for enrolled learners.
+
+ TECH & PROJECTS
+
+Q: Will I build projects?
+A: Yes, every internship includes real-world projects.
+
+Q: Can I upload projects to GitHub?
+A: Yes, learners are encouraged to build portfolios.
+
+Q: Are projects reviewed?
+A: Yes, mentors review submitted work.
+
